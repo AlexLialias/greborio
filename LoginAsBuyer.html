@@ -1,0 +1,214 @@
+<html>
+    <head>
+        <title>GREborio</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/LoginAsBuyer.css">
+        <link rel="stylesheet" href="javascript/products.js">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body >
+        <div class="topnav">
+            <a  class="logo" href="test.html">GREBorio.com</a>
+            <input id="SearchBar" type="text" placeholder="What are you looking for?" >
+            <button type="submit" class="btn">Search</button>
+            <a href="#">Ποιοι είμαστε</a>
+            <a href="#">Μηνύματα <img src="img/message-white.png" width="15" height="15"></a>
+            <a class="test" href="BuyerProfile.html" id="myBtn2">Ο Λογαριαμός μου</a>
+                   
+        </div>
+
+        <div class="main">
+
+            <div class="filters">
+                <h2>Φίλτρα</h2><br>
+                <h3>Εταιρίες Παραγωγής</h3>
+                <ul>
+                    <input type="checkbox">test<br>
+                    <input type="checkbox">test<br>
+                    <input type="checkbox">test3<br>
+                    <input type="checkbox">test<br>
+                    <input type="checkbox">tes5<br>
+                    <input type="checkbox">test6<br>
+                </ul>
+                <hr size="1">
+                <h3>Είδη Παραγωγής</h3>
+                <ul>
+                    <input type="checkbox">test<br>
+                    <input type="checkbox">test<br>
+                    <input type="checkbox">test3<br>
+                    <input type="checkbox">test<br>
+                    <input type="checkbox">tes5<br>
+                    <input type="checkbox">test6<br>
+                </ul>
+                <hr size="1">
+                <h3>Οικογενιακές Φάρμες</h3>
+                <ul>
+                    <input type="checkbox">test<br>
+                    <input type="checkbox">test<br>
+                    <input type="checkbox">test3<br>
+                    <input type="checkbox">test<br>
+                    <input type="checkbox">tes5<br>
+                    <input type="checkbox">test6<br>
+                </ul>
+
+            </div>
+
+            <div class="results" >
+                <h1>Προιόντα</h1>
+                        <div class="products">
+                            <div class="img">
+                                <img src="img/Gala.jpg" height="90%" width="90%"><br>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star">(430)</span>
+
+                            </div>
+                            <div class="details" >
+                                <h2>Γάλα<button id="add1"><img src="img/purchace.png" width="20" height="20"></button></h2>
+                                <p>Είδος Προιόντoς:Γαλακτοκομικά<br>Διαθέσιμη ποσότητα:9L<br>Τιμή λίτρου:0.6$<br></p>
+                            </div>
+                        </div>
+                    <br>
+                    
+                    <div class="products">
+                        <div class="img">
+                                <img src="img/apple.jpg" height="90%" width="90%"><br>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star">(98)</span>
+                        </div>
+                        <div class="details">
+                                <h2>Μήλα<button id="add2"><img src="img/purchace.png" width="20" height="20"></button></h2>
+                                <p>Είδος Προιίντoς:Φρούτα<br>Διαθέσιμη ποσότητα:12 Κιλά<br>Τιμή κίλου:1.2$<br></p>
+                        </div>
+                    </div>
+                    <br>
+                    
+                    <div class="products">
+                        <div class="img">
+                                <img src="img/ladi.jpg" height="90%" width="90%"><br>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star">(123)</span>
+                                
+                        </div>
+                        <div class="details">
+                            <h2>Ελαιόλαδο<button id="add3"><img src="img/purchace.png" width="20" height="20"></button></h2>
+                            <p>Είδος Προιόντoς:Λάδι<br>Διαθέσιμη ποσότητα:14L<br>Τιμή λίτρου:2.6$<br></p>
+                          </div>
+                    </div>
+                    <br>
+
+                    <div class="modal fade" id="myModal2" role="dialog">
+                            <div class="modal-dialog">
+                           
+                               <!-- Modal content-->
+                               <div class="modal-content">
+                                <div class="modal-header" style="padding:35px 50px;">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                   <h4><span class="glyphicon "></span>Προσθήκη στο Καλάθι</h4>
+                                </div>
+                                   <div class="modal-body" style="padding:40px 50px;">
+                                       <form role="form" onsubmit="" action="LoginAsProducer.html" method="POST">
+                                           <div class="form-group">
+                                            <label><span class="glyphicon "></span>Επιλογή Ποσότητας</label>
+                                            <input type="text" class="form-control" id="quanity" placeholder="Ποσοτητα">
+                                           </div>
+                                           
+                                           <button type="submit"><span class="glyphicon glyphicon-ok"></span>Προσθήκη</button>
+                                       </form>
+                                   </div>
+                                   <div class="modal-footer">
+                                       <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Ακυρωση</button>
+                                   </div>
+                               </div>
+                             
+                            </div>
+                    </div>
+
+
+
+            </div>
+
+            <div class="right_side">
+                    <div class="chat-popup" id="myForm">
+                            <div class="form-top">
+                                <h1>Chat</h1>
+                            </div>
+                            <div class="form-body">
+                                <form  class="form-container">
+                                    
+                                    <label for="msg"><b>Message</b></label>
+                                    <textarea placeholder="Type message.." name="msg" required></textarea>
+                                    
+                                    <button type="submit" class="btn">Send</button>
+                                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                                </form>
+                            </div>
+                    </div>
+    
+            </div>
+
+
+        </div>
+                        
+        <div class="footer">
+                <a href="#"><img src="img/twitter.png" width="40px" height="40px"></a>
+                <a href="#"><img src="img/instagram.jpg" width="40px" height="40px"></a>
+                <a href="#"><img src="img/facebook.png" width="40px" height="40px"></a>
+                <a href="#"><img src="img/google-plus.png" width="40px" height="40px"></a>
+        </div>
+
+
+
+
+
+              
+         <script>
+            $(document).ready(function(){
+              $("#add1").click(function(){
+                $("#myModal2").modal();
+              });
+            });
+        </script>
+
+        <script>
+            $(document).ready(function(){
+            $("#add2").click(function(){
+                $("#myModal2").modal();
+            });
+            });
+        </script>
+
+        <script>
+            $(document).ready(function(){
+            $("#add3").click(function(){
+                $("#myModal2").modal();
+            });
+            });
+        </script>
+
+        <script>
+            function openForm() {
+                document.getElementById("myForm").style.display = "block";
+            }
+
+            function closeForm() {
+                document.getElementById("myForm").style.display = "none";
+            } 
+        </script>
+    
+
+    </body>
+</html>

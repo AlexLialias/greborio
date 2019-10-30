@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <title>GREborio</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/BuyerProfile.css">
+        <script src="Javascript/login.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body >
+            <div class="topnav">
+                    <a  class="logo" href="test.html">GREBorio.com</a>
+                    <form action="LoginAsBuyer.html">
+                        <input id="SearchBar" type="text" placeholder="What are you looking for?" >
+                        <button  type="submit" class="btn">Search</button>
+                        <a href="#">Ποιοι ειμαστε</a>
+                        <a onclick="openForm()">Μηνυματα <img src="img/message-white.png" width="15" height="15"></a>
+                        <a href="BuyerProfile.html" >ο Λογαριασμος μου</a>
+                    </form>
+            </div>
+
+            <div class="main">
+
+                <div class="left-side">
+                    <h2>Όνομα</h2>
+                    <h5>Φωτογραφια</h5>
+                    <div><img src="img/DefaultAvatar.jpg" width="400" height="400"></div>
+                    <h3>Τοποθεσία διαμονής</h3>
+                    <h3>Επάγγελμα</h3>
+                </div>
+                
+                <div class="center">
+                    <h1>Ιστορικό Παραγγελιών</h1>
+                    <div class="product">
+                            <div class="img">
+                                <img src="img/Gala.jpg" height="90%" width="90%">
+                            </div>
+                            <div class="details">
+                                <h2>Γάλα<button><img src="img/rate3.png" width="20" height="20"></button></h2>
+                                <p >Είδος Προιόντoς:Γαλακτόκομικα<br>Ποσότητα:9L<br>Τιμη:0.6$<br></p>
+                            </div>
+                    </div><br>
+
+                    <div class="product">
+                            <div class="img">
+                                <img src="img/apple.jpg" height="90%" width="90%">
+                            </div>
+                            <div class="details">
+                                <h2>Μήλα<button><img src="img/rate3.png" width="20" height="20"></button></h2>
+                                <p>Είδος Προιόντoς:Φρούτα<br>Ποσότητα:12 Κίλα<br>Τιμή κιλού:1.2$<br></p>
+                            </div>
+                    </div><br>
+
+                    <div class="product">
+                            <div class="img">
+                                <img src="img/ladi.jpg" height="90%" width="90%">
+                            </div>
+                            <div class="details">
+                                <h2>Ελαιόλαδο<button><img src="img/rate3.png" width="20" height="20"></button></h2>
+                                <p >Είδος Προιόντoς:Λάδι<br>Ποσότητα:9L<br>Τιμή λίτρου:2.6$<br></p>
+                            </div>
+                    </div>
+
+                </div>
+
+                
+                <div class="right-side">
+                    <div class="chat-popup" id="myForm">
+                        <div class="form-top">
+                            <h1>Chat</h1>
+                        </div>
+                        <div class="form-body">
+                            <form  class="form-container">
+                                
+                                <label for="msg"><b>Message</b></label>
+                                <textarea placeholder="Type message.." name="msg" required></textarea>
+                                
+                                <button type="submit" class="btn">Send</button>
+                                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="footer">
+                    <a href="#"><img src="img/twitter.png" width="40px" height="40px"></a>
+                    <a href="#"><img src="img/instagram.jpg" width="40px" height="40px"></a>
+                    <a href="#"><img src="img/facebook.png" width="40px" height="40px"></a>
+                    <a href="#"><img src="img/google-plus.png" width="40px" height="40px"></a>
+                </div>
+
+                </div>
+
+                <script>
+                    function openForm() {
+                        document.getElementById("myForm").style.display = "block";
+                    }
+
+                    function closeForm() {
+                        document.getElementById("myForm").style.display = "none";
+                    } 
+                </script>
+                
+    </body>
+</html>
