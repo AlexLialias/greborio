@@ -3,96 +3,152 @@
         <title>GREborio</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/BuyerProfile.css">
+        <link rel="stylesheet" href="css/main.css">
         <script src="Javascript/login.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     </head>
     <body >
-            <div class="topnav">
-                    <a  class="logo" href="test.html">GREBorio.com</a>
-                    <form action="LoginAsBuyer.html">
-                        <input id="SearchBar" type="text" placeholder="What are you looking for?" >
-                        <button  type="submit" class="btn">Search</button>
-                        <a href="#">Ποιοι ειμαστε</a>
-                        <a onclick="openForm()">Μηνυματα <img src="img/message-white.png" width="15" height="15"></a>
-                        <a href="BuyerProfile.html" >ο Λογαριασμος μου</a>
-                    </form>
+                
+                <div id="topnav">
+                    <a  id="logo" href="test.html">GREBorio.com</a>
+                    <div id="topnav-right">
+                            <a href="#">Ποιοι είμαστε</a>
+                            <a onclick="openForm()">Μηνυματα <img src="img/message-white.png" width="15" height="15"></a>
+                            <a class="test" href="BuyerProfile.html" id="myBtn2">Ο Λογαριαμός μου<img src="img/profile.png " width="20" height="20"></a>
+                    </div>
+                               
+                    </div>
+                    <hr>
+
+
+                <div class="row">
+
+                    <div class="col-sm-2">
+
+                    </div>
+
+                    <div class="col-sm-2" >
+                        <h2>Όνομα</h2>
+                        <h5>Φωτογραφια</h5>
+                        <div><img src="img/DefaultAvatar.jpg" width="100%" ></div>
+                        <h3>Τοποθεσία διαμονής</h3>
+                        <h3>Επάγγελμα</h3>
+                    </div>
+
+                    <div class="col-sm-5">
+                        <h1>Ιστορικό Παραγγελιών</h1>
+                        <hr>
+                        <div class="purchase-history">
+
+                            <div class="row " style="border-style: groove;">
+                                    <div class="col-md-3">
+                                        <img src="img/Gala.jpg" style="width:100%;">
+                                    </div>
+                                    <div class="col-md-9">
+                                <button><img src="img/rate.png" style="width: 15px; height: 15px;"></button><h3>Γαλα </h3>
+                                <p>Ποσοτητα: 15 Λιτρα<br>
+                                    Τιμη: 9<br>
+                                Ημερομνηνια Παραδοσης:21/12/2019<br>
+                                Παραγωγος:Αγγελος ....</p>
+                            </div>
+                            </div><br>
+                        
+                        <div class="row" style="border-style: groove;">
+                                <div class="col-md-3">
+                                    <img src="img/Gala.jpg" style="width:100%;">
+                                </div>
+                                <div class="col-md-9">
+                                    <h3>Γαλα <button><img src="img/rate.png" style="width: 15px; height: 15px; float: right;"></button></h3>
+                                    <p>Ποσοτητα: 15 Λιτρα<br>
+                                    Τιμη: 9<br>
+                                    Ημερομνηνια Παραδοσης:21/12/2019<br>
+                                    Παραγωγος:Αγγελος ....</p>
+                                </div>
+                            </div><br>
+
+                            <div class="row" style="border-style: groove;">
+                                <div class="col-md-3">
+                                    <img src="img/Gala.jpg" style="width:100%;">
+                                </div>
+                                <div class="col-md-9">
+                                    <h3>Γαλα <button><img src="img/rate.png" style="width: 15px; height: 15px; float: right;"></button></h3>
+                                    <p>Ποσοτητα: 15 Λιτρα<br>
+                                        Τιμη: 9<br>
+                                    Ημερομνηνια Παραδοσης:21/12/2019<br>
+                                    Παραγωγος:Αγγελος ....</p>
+                                </div>
+                            </div><br>
+                            
+                        </div>
+                            
+
+                    </div>
+                    <div class="col-sm-2">
+
+                        <div class="chat-popup" id="myForm">
+                            <div class="form-top">
+                                <h1>Chat</h1>
+                            </div>
+                            <div class="form-body">
+                                <form  class="form-container">                                    
+                                    <label for="msg"><b>Message</b></label>
+                                    <textarea placeholder="Type message.." name="msg" required></textarea>        
+                                    <button type="submit" class="btn">Send</button>
+                                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                                </form>
+                            </div>
+                        </div>
+                            
+                    </div>
+                </div>
+
+
+            
+                
             </div>
-
-            <div class="main">
-
-                <div class="left-side">
-                    <h2>Όνομα</h2>
-                    <h5>Φωτογραφια</h5>
-                    <div><img src="img/DefaultAvatar.jpg" width="400" height="400"></div>
-                    <h3>Τοποθεσία διαμονής</h3>
-                    <h3>Επάγγελμα</h3>
-                </div>
-                
-                <div class="center">
-                    <h1>Ιστορικό Παραγγελιών</h1>
-                    <div class="product">
-                            <div class="img">
-                                <img src="img/Gala.jpg" height="90%" width="90%">
-                            </div>
-                            <div class="details">
-                                <h2>Γάλα<button><img src="img/rate3.png" width="20" height="20"></button></h2>
-                                <p >Είδος Προιόντoς:Γαλακτόκομικα<br>Ποσότητα:9L<br>Τιμη:0.6$<br></p>
-                            </div>
-                    </div><br>
-
-                    <div class="product">
-                            <div class="img">
-                                <img src="img/apple.jpg" height="90%" width="90%">
-                            </div>
-                            <div class="details">
-                                <h2>Μήλα<button><img src="img/rate3.png" width="20" height="20"></button></h2>
-                                <p>Είδος Προιόντoς:Φρούτα<br>Ποσότητα:12 Κίλα<br>Τιμή κιλού:1.2$<br></p>
-                            </div>
-                    </div><br>
-
-                    <div class="product">
-                            <div class="img">
-                                <img src="img/ladi.jpg" height="90%" width="90%">
-                            </div>
-                            <div class="details">
-                                <h2>Ελαιόλαδο<button><img src="img/rate3.png" width="20" height="20"></button></h2>
-                                <p >Είδος Προιόντoς:Λάδι<br>Ποσότητα:9L<br>Τιμή λίτρου:2.6$<br></p>
-                            </div>
-                    </div>
-
-                </div>
-
-                
-                <div class="right-side">
-                    <div class="chat-popup" id="myForm">
-                        <div class="form-top">
-                            <h1>Chat</h1>
-                        </div>
-                        <div class="form-body">
-                            <form  class="form-container">
-                                
-                                <label for="msg"><b>Message</b></label>
-                                <textarea placeholder="Type message.." name="msg" required></textarea>
-                                
-                                <button type="submit" class="btn">Send</button>
-                                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-                            </form>
-                        </div>
-                    </div>
-
-                </div>
-
                 <div class="footer">
-                    <a href="#"><img src="img/twitter.png" width="40px" height="40px"></a>
-                    <a href="#"><img src="img/instagram.jpg" width="40px" height="40px"></a>
-                    <a href="#"><img src="img/facebook.png" width="40px" height="40px"></a>
-                    <a href="#"><img src="img/google-plus.png" width="40px" height="40px"></a>
+                        <div class="row">
+  
+                                <div class="col-sm-2">
+                                  <H3>Επικοινωνησε </H3><br>
+                                  <label>Ονομα:</label>
+                                  <input type="text">
+                                  <label>E-mail:</label>
+                                  <input type="email">
+                                  <label>Μυνημα:</label>
+                                  <input type="text"><hr>
+                                  <button type="submit" class="btn btn-default">Αποστολη</button>
+                                  
+                                </div>
+                                <div class="padding" style="padding: 0px 10% 0 10%;"></div>
+                                <div class="col-sm-2">
+                                  <H3>Σχετικα με Εμας </H3><br>
+                                  <a href="#">Το ορομα μας</a>
+                                  <a href="#">Παραγγελιες</a><br>
+                                  <a href="#">Πληρωμη</a><br>
+                                  <a href="#">Πολιτικοι Αποδοχης Προιντων</a>
+                                  <a href="#">Βοηθεια</a>
+                                </div>
+                                <div class="padding" style="padding: 0px 10% 0 10%;"></div>
+                                <div class="col-sm-2">
+                                  <H3>Εταρια </H3><br>
+                                  <h5>GREborio</h5>
+                                  <h6>210-0000000</h6>
+                                  <h6>Τροποι Πληρωμης:</h6>
+                                  <h6>Paysafe</h6>
+                                  <h6> Πιστωτικη καρτα</h6><br>
+                                  <h5> Βρες μας στα SM:</h5>
+                                  <a href="#"><img src="img/twitter.png" width="40px" height="40px"></a>
+                                  <a href="#"><img src="img/instagram.jpg" width="40px" height="40px"></a><br>
+                                  <a href="#"><img src="img/facebook.png" width="40px" height="40px"></a>
+                                  <a href="#"><img src="img/google-plus.png" width="40px" height="40px"></a><br>
+                                </div>
+                              </div>
                 </div>
 
-                </div>
 
                 <script>
                     function openForm() {
@@ -103,6 +159,22 @@
                         document.getElementById("myForm").style.display = "none";
                     } 
                 </script>
+
+                
+<script>
+        window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+          document.getElementById("topnav").style.padding = "30px 10px";
+          document.getElementById("logo").style.fontSize = "20px";
+        } else {
+          document.getElementById("topnav").style.padding = "60px 10px";
+          document.getElementById("logo").style.fontSize = "30px";
+        }
+      }
+        
+      </script>
                 
     </body>
 </html>

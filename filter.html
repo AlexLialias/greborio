@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>GREborio</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+<body>
+    
+
+      <div class="navbar"id="topnav">
+        <a id="logo" href="test.html">GREBorio.com</a>
+        <div id="topnav-right">
+          <a href="#">Ποιοι είμαστε</a>
+          <a href="#">Μηνύματα <img src="img/message-white.png" width="15" height="15"></a>
+          <a class="test" href="BuyerProfile.html" id="myBtn2">Λογαριαμός<img src="img/profile.png " width="20" height="20"></a>
+        </div>
+      </div>
+    <hr>
+     
+    
+    <div class="container">
+        <div class="row">
+          <div class="col-sm-10">
+
+            
+            <h1>Επιλογη φιλτρων αναζητησης</h1><br>
+            <div class="product-select">
+              <label>Κατηγορια προιοντος:</label>
+              <select style="width: 30%;">
+                  <option value="0">Επιλογη τυπου προιοντος</option>
+                  <option value="1">Φρουτα</option>
+                  <option value="2">Λαχανικα</option>
+                  <option value="3">Γαλακτομικα</option>
+                  <option value="4">Λαδι</option>
+                </select>
+              </div>
+              
+              <div class="product-select" >
+                <label>Προιον:</label>
+                <select style="width: 30%;">
+                    <option value="0">Επιλογη τυπου προιοντος</option>
+                    <option value="1">Φρουτα</option>
+                    <option value="2">Λαχανικα</option>
+                    <option value="3">Γαλακτομικα</option>
+                    <option value="4">Λαδι</option>
+                  </select>
+                </div>
+                
+                <div class="product-select" >
+                  <label>Ποσοτητα:</label>
+                  <form>
+                    <input type="number" min="1" max="30">Λιτρα/Κιλα
+                  </form>
+                </div>
+                  <hr>
+
+                  <div class="product-select" >
+                      <label>Προιον:</label>
+                      <select style="width: 30%;">
+                          <option value="0">Οικογενιακες Φαρμες/Εταιριες Παραγωγης</option>
+                          <option value="1">Οικογενιακες Φαρμες</option>
+                          <option value="2">Εταιριες Παραγωγης</option>
+                        </select>
+                      </div>
+
+                      <div class="product-select" >
+                          <label>Προιον:</label>
+                          <select style="width: 30%;">
+                              <option value="0">Επιλογη τυπου προιοντος</option>
+                              <option value="1">Φρουτα</option>
+                              <option value="2">Λαχανικα</option>
+                              <option value="3">Γαλακτομικα</option>
+                              <option value="4">Λαδι</option>
+                            </select>
+                          </div>
+
+            
+            
+                  
+
+            <form action="LoginAsBuyer.html">
+              <button type="submit" class="btn">Αναζητηση</button>
+            </form>
+          
+          </div>
+            
+          </div>
+        </div>
+        
+        
+        
+        <div class="footer">
+          <div class="row">
+
+            <div class="col-sm-2">
+              <H3>Επικοινωνησε </H3><br>
+              <label>Ονομα:</label>
+              <input type="text">
+              <label>E-mail:</label>
+              <input type="email">
+              <label>Μυνημα:</label>
+              <input type="text"><hr>
+              <button type="submit" class="btn btn-default">Αποστολη</button>
+              
+            </div>
+            <div class="padding" style="padding: 0px 10% 0 10%;"></div>
+            <div class="col-sm-2">
+              <H3>Σχετικα με Εμας </H3><br>
+              <a href="#">Το ορομα μας</a>
+              <a href="#">Παραγγελιες</a><br>
+              <a href="#">Πληρωμη</a><br>
+              <a href="#">Πολιτικοι Αποδοχης Προιντων</a>
+              <a href="#">Βοηθεια</a>
+            </div>
+            <div class="padding" style="padding: 0px 10% 0 10%;"></div>
+            <div class="col-sm-2">
+              <H3>Εταρια </H3><br>
+              <h5>GREborio</h5>
+              <h6>210-0000000</h6>
+              <h6>Τροποι Πληρωμης:</h6>
+              <h6>Paysafe</h6>
+              <h6> Πιστωτικη καρτα</h6><br>
+              <h5> Βρες μας στα SM:</h5>
+              <a href="#"><img src="img/twitter.png" width="40px" height="40px"></a>
+              <a href="#"><img src="img/instagram.jpg" width="40px" height="40px"></a><br>
+              <a href="#"><img src="img/facebook.png" width="40px" height="40px"></a>
+              <a href="#"><img src="img/google-plus.png" width="40px" height="40px"></a><br>
+            </div>
+          </div>
+          
+      </div>
+   
+      
+          
+      <script>
+            window.onscroll = function() {scrollFunction()};
+          
+          function scrollFunction() {
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+              document.getElementById("topnav").style.padding = "30px 10px";
+              document.getElementById("logo").style.fontSize = "20px";
+            } else {
+              document.getElementById("topnav").style.padding = "60px 10px";
+              document.getElementById("logo").style.fontSize = "30px";
+            }
+          }
+            
+    </script>
+
+</body>
+</html>

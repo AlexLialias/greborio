@@ -4,15 +4,15 @@
   }
   
   body {
-    margin: 0px;
+    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(211, 211, 211);
+    background-color: white;
   }
 
    
   /* Style the top navigation bar */
   .topnav {
-    height: 50px;
+    height: 8%;
     overflow: hidden;
     background-color:black;
   }
@@ -59,7 +59,7 @@
   }
 
   .main{
-    background-color: rgb(211, 211, 211);
+    background-color: gray;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap:wrap;
@@ -78,16 +78,15 @@
 .right-side{
     -ms-flex: 20%;
     flex: 20%;
-    background-color:  rgb(211, 211, 211);
     padding: 20px;
     margin: 10px;
     
 }
 
 .center{
-    -ms-flex:60%;
+    -ms-flex:50%;
     flex:50%;
-    background-color: rgb(211, 211, 211);
+    width: 50%;
     padding: 20px;
     margin: 10px;
 }
@@ -107,13 +106,14 @@
 
 .details{
     flex: 80%;
-    background-color: rgb(255, 255, 255);
+
     padding: 10px;
 }
 
 .product{
     display: flex;
     flex:wrap;
+    background-color: white;
 }
 
 
@@ -126,8 +126,9 @@
 }
 
 .footer {
-  background-color:rgb(211, 211, 211);
+  background-color:#fff;
   padding: 10px;
+  width: 100%;
 }
 
 .chat-popup {

@@ -5,75 +5,110 @@
   
   body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 140px;
   }
   
   /* Style the top navigation bar */
-  .topnav {
-    overflow: hidden;
+  #topnav {
+    top: 0;
+    position: fixed;
     background-color:black;
+    width: 100%;
+    list-style-type: none;
+    z-index: 99;
+    padding: 60px 10px;
   }
   
   /* Style the topnav links */
-  .topnav a {
+  #logo {
+    margin-left: 20%;
+    float: left;
+    font-size: 35px;
+    transition: 0.4s;
+    color: white;
+  }
+
+  #topnav-right{
+    margin-right: 20%;
+  }
+  
+  #topnav button{
+    height: 30px;
+  }
+ 
+  #topnav-right a{ 
+    margin-right: 5px;
     float: right;
-    display: block;
-    color: #f2f2f2;
+    display: inline-block;
+    color: white;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
+    font-size: 15px;
+    margin-left: 10px;
   }
   
   /* Change color on hover */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
+  #topnav a:hover {
+    text-decoration: underline;
   }
   
-  .topnav .logo:hover{
-      background-color: black ;
-      color:#ddd;
+  .signup {
+    padding: 16px 14px;
+    font-size: 25px;
+    width:100%;
+    display: inline-block;
+    background-color:white ;
   }
   
-  .topnav .logo{
-      float: left;
-  }
   
   /* Style the content */
   .content {
-    background-color: #ddd;
-    padding: 10px;
-    height: 90%; /* Should be removed. Only for demonstration */
-  }
-  
-  /* Style the footer */
-  .footer {
-    background-color: #ddd;
-    padding: 10px;
+    background-color:white ;
+    overflow: hidden;
+    
   }
 
-  .modal-header, h4 , .close{
+.modal-header h4{
+  float: left;
+}
+
+  
+  .modal-header, h4 ,  .close {
     background-color: black;
     color: white !important;
     text-align: center;
     font-size: 30px;
-}
-
-.modal-body button{
+    
+  }
+  
+  .modal-body button{
   background-color: black;
   color: white;
 }
 
 .modal-footer{
-    background-color: #f9f9f9;
+  background-color: #f9f9f9;
+  font-size: 12px;
 }
 
 .bt{
-  display: inline-block;
+  
   margin:5px;
 }
 
-.buttons .btn {
+.row .btn-default{
+  background-color: black;
+  color: white;
+}
+
+.row .btn{
+  background-color: black;
+  color: white;
+}
+
+
+.buttons .btn, .container .btn {
+  float: right;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   background-color: black;
@@ -90,12 +125,13 @@
   background-color: white;
 }
 
- /* Slideshow container */
+/* Slideshow container */
 .slideshow-container {
-  max-width: 1400px;
-  max-height: 800px;
-  position: relative;
-  margin: auto;
+  width:100%;
+}
+
+.slideshow-container img{
+  max-height: 1000px;
 }
 
 /* Hide the images by default */
@@ -130,16 +166,6 @@
   background-color: rgba(0,0,0,0.8);
 }
 
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
 
 /* Number text (1/3 etc) */
 .numbertext {
@@ -176,4 +202,199 @@
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+
+
+
+.left, .right {
+  width: 25%;
+}
+
+.middle {
+  width: 50%;
+  margin-top:7%;
+  
+}
+
+
+
+
+  /* Style the footer */
+  .footer {
+    background-color: white;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 40px;
+    width:100%;
+    background-color: whitesmoke;
+  }
+
+  .footer a{
+    color: black;
+  }
+  .product-select{
+    padding: 2%;
+    font-weight: 700;
+   
+  }
+
+  select{
+    line-height: 1.3;
+    box-sizing: border-box;
+    display: block;
+    margin: 0;
+    border: 1px solid #aaa;
+    box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+    border-radius: .5em;
+    padding: .6em 1.4em .5em .8em;
+    
+  }
+
+select option{
+  font-weight: normal;
+}
+
+
+.chat-popup {
+  display: none;
+  position: fixed;
+  right: 15px;
+  border:  black;
+  
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: black;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+.form-top {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+
+
+
+.row button{
+  float: right;
+ margin: 4px;
+}
+
+.purchase-history .row{
+  padding:4px;
+}
+
+.card{
+  padding: 2px;
+  margin:2px
+}
+
+
+
+
+/* testing css*/
+
+.Sform{
+  margin-top: 40px;
+}
+
+.Sform input[type=text],.Sform input[type=password]{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+.Sform input[type=text]:focus, input[type=password]:focus{
+  background-color: #ddd;
+  outline: none;
+}
+
+
+
+.Sform button {
+background-color: black;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 100%;
+opacity: 0.9;
+}
+
+.Sform button:hover {
+opacity:1;
+}
+
+.Sform .cancelbtn {
+padding: 14px 20px;
+background-color:red;
+}
+
+.cancelbtn, .signupbtn {
+float: left;
+width: 20%;
+}
+
+.SForm .container {
+padding: 16px;
+}
+
+.clearfix::after {
+content: "";
+clear: both;
+display: table;
+}
+
+@media screen and (max-width: 300px) {
+.cancelbtn, .signupbtn {
+   width: 100%;
+}
 }
